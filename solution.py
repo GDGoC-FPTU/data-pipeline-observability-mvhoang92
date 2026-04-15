@@ -69,7 +69,7 @@ def validate(data):
        - In ra so luong record hop le va khong hop le
 
     Returns:
-        list: Danh sach cac records hop le
+        list: Danh sach cac records hop le 
     """
     valid_records = []
     error_count = 0
