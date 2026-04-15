@@ -85,6 +85,7 @@ def validate(data):
             error_count += 1
 
     print(f"Validation complete. Valid: {len(valid_records)}, Errors: {error_count}")
+    print(f"Processed: {len(valid_records)} valid records, Dropped: {error_count} invalid records.")
     return valid_records
 
 
@@ -136,6 +137,7 @@ if __name__ == "__main__":
     raw_data = extract(SOURCE_FILE)
 
     if raw_data:
+        print(f"Extracted {len(raw_data)} records from JSON.")
         # 2. Validate
         clean_data = validate(raw_data)
 
